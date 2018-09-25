@@ -1,0 +1,13 @@
+---
+  apiVersion: v1
+  kind: Pod
+  metadata:
+    name: cidemo
+    labels:
+      app: web
+  spec:
+    containers:
+      - name: dazzling_goldberg
+        image: ci_demo:v1
+        ports:
+          - containerPort: 80
